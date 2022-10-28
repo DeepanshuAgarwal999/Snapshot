@@ -1,0 +1,8 @@
+.photo-list{
+    display: flex;
+    flex-wrap: wrap; 
+    /* margin:auto; */
+    padding: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
