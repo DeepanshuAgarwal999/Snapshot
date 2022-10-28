@@ -43,7 +43,7 @@ const Footer=()=>{
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Copyright &copy; 2022 All Rights Are Reserved 
+            <p className="copyright-text">Copyright &copy; {new Date.getFullyear()} All Rights Are Reserved 
             </p>
           </div>
 
