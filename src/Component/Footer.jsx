@@ -1,5 +1,6 @@
 import '../Css/footer.css'
 import React from "react";
+import { FaFacebook,FaTwitter,FaLinkedin,FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer=()=>{
     return(
@@ -49,10 +50,10 @@ const Footer=()=>{
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
-              <li><Link className="facebook" to="#"><i className="fa fa-facebook"></i></Link></li>
-              <li><Link className="twitter" to="#"><i className="fa fa-twitter"></i></Link></li>
-              <li><Link className="dribbble" to="#"><i className="fa fa-dribbble"></i></Link></li>
-              <li><Link className="linkedin" to="#"><i className="fa fa-linkedin"></i></Link></li>   
+              <li><Link  to="/"><i><FaFacebook/></i></Link></li>
+              <li><Link to='/'><i ><FaLinkedin/></i></Link></li>
+              <li><Link to='/'><i><FaTwitter/></i></Link></li>
+              <li><Link to='/'><i><FaDiscord/></i></Link></li> 
             </ul>
           </div>
         </div>
