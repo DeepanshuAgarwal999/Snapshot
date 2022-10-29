@@ -1,5 +1,6 @@
 import '../Css/footer.css'
 import React from "react";
+import { FaFacebook,FaTwitter,FaLinkedin,FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaFacebook,FaTwitter,FaLinkedin,FaDiscord } from "react-icons/fa";
 
@@ -46,7 +47,11 @@ const Footer=()=>{
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
+<<<<<<< HEAD
             <p className="copyright-text">Copyright &copy; {new Date().getFullYear()}  All Rights Are Reserved 
+=======
+            <p className="copyright-text">Copyright &copy; {new Date.getFullyear()} All Rights Are Reserved 
+>>>>>>> b58b7ace07bd666ecabd54af5a2392e136b0a7b1
             </p>
           </div>
 
@@ -55,7 +60,11 @@ const Footer=()=>{
               <li><Link  to="/"><i><FaFacebook/></i></Link></li>
               <li><Link to='/'><i ><FaLinkedin/></i></Link></li>
               <li><Link to='/'><i><FaTwitter/></i></Link></li>
+<<<<<<< HEAD
               <li><Link to='/'><i><FaDiscord/></i></Link></li>
+=======
+              <li><Link to='/'><i><FaDiscord/></i></Link></li> 
+>>>>>>> b58b7ace07bd666ecabd54af5a2392e136b0a7b1
             </ul>
           </div>
         </div>

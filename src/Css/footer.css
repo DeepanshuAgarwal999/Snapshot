@@ -7,8 +7,13 @@
   color:#737373;
   position:relative;
   left:0;
+<<<<<<< HEAD
  bottom:0;
  right:0;
+=======
+  bottom:0;
+  right:0;
+>>>>>>> b58b7ace07bd666ecabd54af5a2392e136b0a7b1
 }
 .site-footer hr
 {
