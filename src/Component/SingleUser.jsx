@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import '../Css/card.css'
+import { useNavigate } from 'react-router-dom'
+import '../Css/buton.css'
+
 const SingleUser = () => {
 
   const [user, setUser] = useState({});
@@ -21,24 +24,29 @@ const SingleUser = () => {
 
 
 
-const handleDownload=()=>{
-  alert("Are You Sure To Download ? ");
+// const handleDownload=()=>{
+//   alert("Are You Sure To Download ? ");
+// }
+const navigate=useNavigate();
+const Downnload =()=>{
+  navigate('/users/:userID/Download')
 }
-
   
-
+const ReverseBack =()=>{
+  navigate('/users')
+}
 
 
   return (
     <div>
-    <div className="photo-card">
+    <div className="photo-cards">
       <p>ID:{user.id} </p>
       <p>Title:{user.title} </p>
-      <img src={user.imgdata} alt='' onClick={handleDownload}></img> 
+      <img src={user.imgdata} alt='' onClick={Downnload}></img> 
       <br></br>   
       <br></br>   
-      {/* <button type="button" className="btn btn-outline-success " onClick={reverseBack}>GO back </button> */}
-      <button type="button" className="btn btn-outline-success " onClick={handleDownload}>Download </button>
+      <button type="button" className="btn btn-outline-success" onClick={ReverseBack}>GO back </button>
+      <button type="button" className="btn btn-outline-success butond " onClick={Downnload} >Download </button>
     </div>
     </div>
   )

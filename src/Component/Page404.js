@@ -3,7 +3,7 @@
 const Page404 =()=>{
     return(
         <div>
-<h1>
+<h1 style={{marginTop:130,padding:140,fontSize:80}}>
     OOPS!! something seems broken  :(
         
 </h1>

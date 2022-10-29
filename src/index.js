@@ -14,7 +14,7 @@ import Users from './Component/Users';
 import SingleUser from './Component/SingleUser';
 import Page404 from "./Component/Page404";
 import Footer from "./Component/Footer";
-
+import Download from "./Component/Download";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -25,7 +25,8 @@ root.render(
         <Route path="/users" element={<Users />} />
         <Route path="/users/:userID" element={<SingleUser />} />
       <Route path="*" element={<Page404 />}/>
-       
+      <Route path="/users/:userID/Download" element={<Download/>}></Route>
+
       </Route>
     </Routes>
 <Footer/>

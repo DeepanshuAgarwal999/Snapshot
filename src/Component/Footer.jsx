@@ -1,6 +1,8 @@
 import '../Css/footer.css'
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebook,FaTwitter,FaLinkedin,FaDiscord } from "react-icons/fa";
+
 const Footer=()=>{
     return(
    <div>
@@ -12,6 +14,7 @@ const Footer=()=>{
             <h6>About</h6>
             <p className="text-justify">This project is created by <i>Deepanshu Agarwal</i> (2100290130060) and <i>Aryan Srivastava</i>(2100290130042)
             under the guidance of<i>___________</i>this project is developed by using react js.
+            The basic theme of this project is to provide a non copyrighted images for content creators
             </p>
           </div>
 
@@ -43,16 +46,16 @@ const Footer=()=>{
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Copyright &copy; 2022 All Rights Are Reserved 
+            <p className="copyright-text">Copyright &copy; {new Date().getFullYear()}  All Rights Are Reserved 
             </p>
           </div>
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
-              <li><Link className="facebook" to="#"><i className="fa fa-facebook"></i></Link></li>
-              <li><Link className="twitter" to="#"><i className="fa fa-twitter"></i></Link></li>
-              <li><Link className="dribbble" to="#"><i className="fa fa-dribbble"></i></Link></li>
-              <li><Link className="linkedin" to="#"><i className="fa fa-linkedin"></i></Link></li>   
+              <li><Link  to="/"><i><FaFacebook/></i></Link></li>
+              <li><Link to='/'><i ><FaLinkedin/></i></Link></li>
+              <li><Link to='/'><i><FaTwitter/></i></Link></li>
+              <li><Link to='/'><i><FaDiscord/></i></Link></li>
             </ul>
           </div>
         </div>

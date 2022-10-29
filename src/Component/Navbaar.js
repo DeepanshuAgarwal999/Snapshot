@@ -1,15 +1,19 @@
 import React from "react";
-
-const snapshotlogo = "http://www.kaleida.co.uk/app/uploads/2017/03/Logo-Colour-Snapshot.jpg";
+import { useNavigate } from 'react-router-dom'
+const snapshotlogo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLThgYhUmEzeq8lAu40bRXKYKwy0rplxUJyw&usqp=CAU";
 
 const Navbaar = () => {
+  const navigate=useNavigate();
+  const ReverseBack =()=>{
+    navigate('/users')
+  }
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark " >
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark " style={{position:"sticky",top:-1}} >
       <img 
         src={snapshotlogo}
-        
+        onClick={ReverseBack}
         style={{
-          width: "7rem",
+          width: "8rem",
           position: "relative",
           left: "3%",
           cursor: "pointer",

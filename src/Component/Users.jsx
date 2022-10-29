@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import '../Css/Photo-list.css'
 import Card from './Card'
-
 const Users = () => {
   //user state
   const [users, setUsers] = useState([])
@@ -36,8 +35,9 @@ const Users = () => {
       setFilteredUsers(res.data)
       setUserLoading(false)
     }).catch(error => {
-      console.log("error in api call", error)
-      setUserLoading(false)
+      console.log("error in api call", error);
+     alert("NO Data Found :( \nAPI ERROR");
+     setUserLoading(false)
     })
 
   }, [])
@@ -49,8 +49,8 @@ const Users = () => {
 
 
        <form onSubmit={handleFilter}>
-        <input  className="m-5 form-group col-md-4 " type="text" placeholder="Search your favourite image" onChange={handleSearchKeyword} />
-        <input className="btn btn-primary " type="submit" value="search" />
+        <input  className="m-5 form-group col-md-4 " type="text" placeholder="Search your favourite image" onChange={handleSearchKeyword} style={{height:50}}/>
+        <input className="btn btn-primary " type="submit" value="Search"  style={{width:100,height:52}}/>
       </form> 
 
       {/** Render the photo cards */}
