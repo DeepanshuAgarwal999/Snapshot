@@ -1,8 +1,8 @@
 .photo-list{
     display: flex;
-    flex-wrap: wrap; 
-    /* margin:auto; */
+    flex-wrap: wrap;
     padding: auto;
     margin-right: auto;
+    overflow: auto;   
     justify-content: center;
   }
