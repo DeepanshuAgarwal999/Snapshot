@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import '../Css/Photo-list.css'
 import Card from './Card'
+import '../Css/bg.css'
+
 const Users = () => {
   //user state
   const [users, setUsers] = useState([])
@@ -49,6 +51,7 @@ const Users = () => {
 
 
        <form onSubmit={handleFilter}>
+            <h1 className='fonth'><i>Snapshot</i></h1>
         <input  className="m-5 form-group col-md-4 " type="text" placeholder="Search your favourite image" onChange={handleSearchKeyword} style={{height:50}}/>
         <input className="btn btn-primary " type="submit" value="Search"  style={{width:100,height:52}}/>
       </form> 
